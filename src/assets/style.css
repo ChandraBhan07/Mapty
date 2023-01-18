@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid-auto-form {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .grid-auto-event {
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  }
+
+  .marker {
+    background-image: url("./pin.png");
+    background-size: cover;
+    width: 32px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .popup {
+    border-radius: 0.25rem;
+    border-left-width: 4px;
+    background-color: rgb(38 38 38);
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: white;
+  }
+
+  .border-orange {
+    border-color: #ffb545 !important;
+  }
+
+  .border-green {
+    border-color: #00c46a !important;
+  }
+
+  .mapboxgl-popup-content {
+    padding: 0 !important;
+  }
+}
