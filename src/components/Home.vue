@@ -8,7 +8,7 @@ const emit = defineEmits(['NewMarkerCoords']);
 <template>
     <span v-if="alert.isOpen" class="flex justify-center text-white">
         <span class="rounded-b-lg p-2 px-14 absolute z-10"
-            :class="this.alert.status == 'success' ? 'bg-green-500' : 'bg-red-500'">
+            :class="alert.status == 'success' ? 'bg-green-500' : 'bg-red-500'">
             {{ alert.text }}
         </span>
     </span>
